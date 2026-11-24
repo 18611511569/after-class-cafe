@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Lora:ital,wght@0,500;1,500&family=Marcellus&display=swap');
+
+body {
+  background-color: #FFF7EC;
+  color: #38261E;
+  font-family: "Lato", Arial, sans-serif;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1, h2, h3 {
+  font-family: "Lora", Georgia, serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-style: italic;
+}
+
+nav {
+  font-family: "Marcellus", Georgia, serif;
+}
+
+input, textarea, button {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding: 16px 20px;
+  background-color: #FFE4CF;
+  border-radius: 12px;
+}
+
+.site-brand {
+  font-family: "Lora", Georgia, serif;
+  font-size: 23px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  font-size: 17px;
+}
+
+.site-header a {
+  color: #38261E;
+  text-decoration: none;
+}
+
+.site-header a:hover,
+.site-header a:focus-visible {
+  color: #A7431D;
+  text-decoration: underline;
+}
+#home {
+  padding-top: 32px;
+}
+
+#home h1 {
+  font-size: clamp(36px, 6vw, 64px);
+  margin: 0 0 8px;
+}
+
+#home p {
+  font-size: 18px;
+  margin: 0 0 22px;
+}
+
+#home img {
+  width: 100%;
+  border-radius: 14px;
+}
+#about {
+  padding-top: 44px;
+}
+
+#about h2 {
+  font-size: 34px;
+  margin: 0 0 12px;
+}
+
+#about p {
+  max-width: 72ch;
+  font-size: 17px;
+  line-height: 1.65;
+  margin: 0 0 20px;
+}
+
+#about video {
+  display: block;
+  width: 100%;
+  border-radius: 14px;
+}
+#menu {
+  padding-top: 44px;
+}
+
+#menu h2 {
+  font-size: 34px;
+  margin: 0 0 18px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.menu-card {
+  background-color: #FFE4CF;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.menu-card img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-card h3 {
+  font-size: 23px;
+  margin: 14px 0 6px;
+}
+
+.menu-card p {
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+
+.menu-card .price {
+  color: #A7431D;
+  font-weight: bold;
+}
+
+@media (max-width: 680px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+#contact {
+  padding: 44px 0 24px;
+  overflow-wrap: anywhere;
+}
+
+#contact h2 {
+  font-size: 34px;
+  margin: 0 0 12px;
+}
+
+#contact form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 20px;
+  background-color: #FFE4CF;
+  border-radius: 14px;
+}
+
+#contact form p {
+  margin: 0;
+}
+
+#contact form p:last-of-type {
+  grid-column: 1 / -1;
+}
+
+#contact input,
+#contact textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #A7836D;
+  border-radius: 8px;
+  background-color: #FFF7EC;
+  color: #38261E;
+  font-size: 16px;
+}
+
+#contact textarea {
+  resize: vertical;
+}
+
+#contact button {
+  grid-column: 1 / -1;
+  justify-self: start;
+  padding: 10px 22px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #A7431D;
+  color: #FFE4CF;
+  font-size: 16px;
+}
+
+@media (max-width: 680px) {
+  #contact form {
+    grid-template-columns: 1fr;
+  }
+}
