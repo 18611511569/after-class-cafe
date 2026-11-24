@@ -6,4 +6,4 @@ A multimedia HTML project for the Web Design and Development with Multimedia cou
 - style.css - styles
 - media/ - images and video used by the site
 
-Live website is published with GitHub Pages.
+Live site: https://18611511569.github.io/after-class-cafe/
